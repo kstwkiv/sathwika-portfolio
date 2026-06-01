@@ -1,0 +1,25 @@
+<nav class="navbar" [class.scrolled]="scrolled">
+  <div class="nav-container">
+    <div class="nav-logo" (click)="scrollTo('hero')">
+      <span class="logo-text">SK</span>
+      <span class="logo-dot">.</span>
+    </div>
+
+    <ul class="nav-links" [class.open]="menuOpen">
+      @for (link of navLinks; track link.href) {
+        <li>
+          <a
+            (click)="scrollTo(link.href)"
+            [class.active]="activeSection === link.href"
+          >{{ link.label }}</a>
+        </li>
+      }
+    </ul>
+
+    <button class="hamburger" (click)="toggleMenu()" [class.open]="menuOpen" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>

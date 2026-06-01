@@ -1,0 +1,45 @@
+<section id="about" class="section about">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">About Me</span>
+      <h2 class="section-title">Who I Am</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text">
+        <p class="about-intro">
+          I'm a final-year Computer Science student at Lovely Professional University, currently training as a 
+          <strong>.NET Full-Stack Engineer at Capgemini</strong>. I build things across the stack — from 
+          distributed microservices and cloud data pipelines to responsive frontends.
+        </p>
+        <p>
+          My background spans <strong>backend engineering</strong> (ASP.NET Core, microservices, RabbitMQ), 
+          <strong>data engineering</strong> (BigQuery, ETL, PySpark), and <strong>ML</strong> — where I ranked 
+          in the <strong>top 3% nationally</strong> at Amazon's ML Summer School.
+        </p>
+        <p>
+          I care about writing clean, maintainable code and building systems that actually scale. 
+          Outside of work, I grind LeetCode (400+ problems, rating 1643) and explore new tech.
+        </p>
+
+        <div class="about-edu">
+          <div class="edu-icon">🎓</div>
+          <div>
+            <strong>{{ data.education.university }}</strong>
+            <span>{{ data.education.degree }} · CGPA {{ data.education.cgpa }}</span>
+            <span class="edu-period">{{ data.education.period }} · {{ data.education.location }}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats-grid">
+        @for (stat of data.stats; track stat.label) {
+          <div class="stat-card">
+            <div class="stat-value">{{ stat.value }}</div>
+            <div class="stat-label">{{ stat.label }}</div>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>

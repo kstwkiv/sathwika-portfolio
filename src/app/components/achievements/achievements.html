@@ -1,0 +1,40 @@
+<section id="achievements" class="section achievements">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Achievements & Certifications</span>
+      <h2 class="section-title">Recognition & Learning</h2>
+    </div>
+
+    <div class="ach-layout">
+      <div class="ach-col">
+        <h3 class="col-title">🏆 Achievements</h3>
+        <div class="ach-list">
+          @for (item of achievements; track item.title) {
+            <div class="ach-card">
+              <div class="ach-icon">{{ item.icon }}</div>
+              <div>
+                <div class="ach-title">{{ item.title }}</div>
+                <div class="ach-detail">{{ item.detail }}</div>
+              </div>
+            </div>
+          }
+        </div>
+      </div>
+
+      <div class="ach-col">
+        <h3 class="col-title">📜 Certifications</h3>
+        <div class="ach-list">
+          @for (cert of certifications; track cert.title) {
+            <div class="ach-card">
+              <div class="ach-icon">{{ cert.icon }}</div>
+              <div>
+                <div class="ach-title">{{ cert.title }}</div>
+                <div class="ach-detail">{{ cert.issuer }}</div>
+              </div>
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

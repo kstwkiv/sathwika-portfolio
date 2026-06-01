@@ -1,0 +1,41 @@
+<section id="contact" class="section contact">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Contact</span>
+      <h2 class="section-title">Let's Connect</h2>
+    </div>
+
+    <div class="contact-wrapper">
+      <div class="contact-intro">
+        <p>
+          I'm actively looking for <strong>full-time roles</strong> and <strong>internships</strong> in 
+          backend engineering, data engineering, or full-stack development. 
+          If you have an opportunity or just want to chat tech, reach out!
+        </p>
+        <div class="location-badge">
+          <span>📍</span>
+          <span>{{ data.location }} · Open to Remote</span>
+        </div>
+      </div>
+
+      <div class="contact-links">
+        @for (link of contactLinks; track link.label) {
+          <a [href]="link.href" target="_blank" rel="noopener" class="contact-card">
+            <span class="contact-icon">{{ link.icon }}</span>
+            <div class="contact-info">
+              <span class="contact-label">{{ link.label }}</span>
+              <span class="contact-value">{{ link.value }}</span>
+            </div>
+            <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+              <path d="M7 17L17 7M17 7H7M17 7v10"/>
+            </svg>
+          </a>
+        }
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>Built with Angular · Designed & developed by Sathwika Kurma</p>
+  </footer>
+</section>
