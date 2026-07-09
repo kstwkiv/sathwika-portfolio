@@ -1,20 +1,22 @@
 <section id="skills" class="section skills">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header" appReveal>
       <span class="section-tag">Technical Skills</span>
       <h2 class="section-title">What I Work With</h2>
     </div>
 
     <div class="skills-grid">
-      @for (group of skills; track group.category) {
-        <div class="skill-group">
+      @for (group of skills; track group.category; let i = $index) {
+        <div class="skill-group" appReveal [delay]="i * 80">
           <div class="skill-group-header">
             <span class="skill-icon">{{ group.icon }}</span>
             <h3>{{ group.category }}</h3>
           </div>
           <div class="skill-tags">
-            @for (item of group.items; track item) {
-              <span class="skill-tag">{{ item }}</span>
+            @for (item of group.items; track item; let j = $index) {
+              <span class="skill-tag" [style.animation-delay]="(i * 80 + j * 40) + 'ms'">
+                {{ item }}
+              </span>
             }
           </div>
         </div>

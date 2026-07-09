@@ -1,25 +1,23 @@
 <section id="projects" class="section projects">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header" appReveal>
       <span class="section-tag">Projects</span>
       <h2 class="section-title">Things I've Built</h2>
     </div>
 
-    <div class="filter-bar">
+    <div class="filter-bar" appReveal [delay]="100">
       @for (filter of filters; track filter.value) {
-        <button
-          class="filter-btn"
-          [class.active]="activeFilter === filter.value"
-          (click)="setFilter(filter.value)"
-        >
+        <button class="filter-btn"
+                [class.active]="activeFilter === filter.value"
+                (click)="setFilter(filter.value)">
           {{ filter.label }}
         </button>
       }
     </div>
 
     <div class="projects-grid">
-      @for (project of filteredProjects; track project.title) {
-        <div class="project-card">
+      @for (project of filteredProjects; track project.title; let i = $index) {
+        <div class="project-card" appReveal appTilt [delay]="i * 80">
           <div class="card-top">
             <div class="project-icon" [style.background]="project.color + '22'">
               {{ project.icon }}
@@ -47,7 +45,9 @@
 
           <div class="project-tags">
             @for (tag of project.tags; track tag) {
-              <span class="tag" [style.borderColor]="project.color + '44'" [style.color]="project.color">
+              <span class="tag"
+                    [style.borderColor]="project.color + '55'"
+                    [style.color]="project.color">
                 {{ tag }}
               </span>
             }

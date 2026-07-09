@@ -1,13 +1,17 @@
 <section id="experience" class="section experience">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header" appReveal>
       <span class="section-tag">Experience</span>
       <h2 class="section-title">Where I've Worked</h2>
     </div>
 
     <div class="timeline">
+      <!-- Animated spine line -->
+      <div #timelineLine class="timeline-line"></div>
+
       @for (exp of experience; track exp.company; let i = $index) {
-        <div class="timeline-item" [class.right]="i % 2 !== 0">
+        <div class="timeline-item" [class.right]="i % 2 !== 0"
+             appReveal [direction]="i % 2 === 0 ? 'left' : 'right'" [delay]="i * 150">
           <div class="timeline-dot" [style.background]="exp.color"></div>
           <div class="timeline-card">
             <div class="card-header">
@@ -18,7 +22,9 @@
               </div>
               <div class="card-meta">
                 <span class="period">{{ exp.period }}</span>
-                <span class="type-badge" [style.background]="exp.color + '22'" [style.color]="exp.color">
+                <span class="type-badge"
+                      [style.background]="exp.color + '22'"
+                      [style.color]="exp.color">
                   {{ exp.type }}
                 </span>
               </div>

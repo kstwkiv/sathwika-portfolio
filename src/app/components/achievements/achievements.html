@@ -1,16 +1,16 @@
 <section id="achievements" class="section achievements">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header" appReveal>
       <span class="section-tag">Achievements & Certifications</span>
       <h2 class="section-title">Recognition & Learning</h2>
     </div>
 
     <div class="ach-layout">
-      <div class="ach-col">
+      <div class="ach-col" appReveal direction="left" [delay]="100">
         <h3 class="col-title">🏆 Achievements</h3>
         <div class="ach-list">
-          @for (item of achievements; track item.title) {
-            <div class="ach-card">
+          @for (item of achievements; track item.title; let i = $index) {
+            <div class="ach-card" appReveal direction="left" [delay]="150 + i * 80">
               <div class="ach-icon">{{ item.icon }}</div>
               <div>
                 <div class="ach-title">{{ item.title }}</div>
@@ -21,11 +21,11 @@
         </div>
       </div>
 
-      <div class="ach-col">
+      <div class="ach-col" appReveal direction="right" [delay]="200">
         <h3 class="col-title">📜 Certifications</h3>
         <div class="ach-list">
-          @for (cert of certifications; track cert.title) {
-            <div class="ach-card">
+          @for (cert of certifications; track cert.title; let i = $index) {
+            <div class="ach-card" appReveal direction="right" [delay]="250 + i * 80">
               <div class="ach-icon">{{ cert.icon }}</div>
               <div>
                 <div class="ach-title">{{ cert.title }}</div>

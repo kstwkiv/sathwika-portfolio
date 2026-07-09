@@ -20,7 +20,7 @@ export const portfolioData = {
   stats: [
     { value: '400+', label: 'LeetCode Problems' },
     { value: '1643', label: 'LeetCode Rating' },
-    { value: 'Top 3%', label: 'Amazon ML School' },
+    { value: 'Top 3 %', label: 'Amazon ML School' },
     { value: '8.01', label: 'CGPA' },
   ],
 

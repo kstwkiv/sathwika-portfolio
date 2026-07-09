@@ -88,6 +88,30 @@
   }
 }
 
+.resume-nav-item {
+  .resume-nav-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--gold-light) !important;
+    border: 1px solid rgba(184, 134, 11, 0.3);
+    padding: 0.35rem 0.9rem;
+    font-size: 0.68rem !important;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    &::after { display: none !important; }
+
+    &:hover {
+      background: rgba(184, 134, 11, 0.1);
+      border-color: var(--gold-mid);
+      color: var(--gold-shimmer) !important;
+    }
+  }
+}
+
 .hamburger {
   display: none;
   flex-direction: column;

@@ -3,14 +3,16 @@
   max-width: 880px;
   margin: 0 auto;
 
-  /* Central spine */
-  &::before {
-    content: '';
+  /* Animated spine — replaced static ::before */
+  .timeline-line {
     position: absolute;
     left: 50%;
     top: 0;
     bottom: 0;
     width: 1px;
+    transform-origin: top center;
+    transform: scaleY(0);
+    transition: transform 1.4s cubic-bezier(0.16, 1, 0.3, 1);
     background: linear-gradient(
       to bottom,
       transparent,
@@ -19,11 +21,11 @@
       rgba(184, 134, 11, 0.2) 85%,
       transparent
     );
-    transform: translateX(-50%);
-  }
+    translate: -50% 0;
 
-  @media (max-width: 768px) {
-    &::before { left: 18px; }
+    &.drawn { transform: scaleY(1); }
+
+    @media (max-width: 768px) { left: 18px; }
   }
 }
 
