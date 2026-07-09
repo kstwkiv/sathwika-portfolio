@@ -107,28 +107,12 @@ export const portfolioData = {
 
   projects: [
     {
-      title: 'CraveKart',
-      subtitle: 'Microservices Food Delivery Platform',
-      period: 'April 2026',
-      tags: ['ASP.NET Core', 'RabbitMQ', 'Docker', 'SQL Server', 'API Gateway', 'C#'],
-      category: 'backend',
-      github: 'https://github.com/kstwkiv',
-      color: '#e74c3c',
-      icon: '🍔',
-      points: [
-        'Engineered a distributed microservices backend using ASP.NET Core and RESTful APIs.',
-        'Implemented asynchronous inter-service communication via RabbitMQ for scalable, decoupled architecture.',
-        'Designed API Gateway routing and centralised request handling for authentication and service orchestration.',
-        'Containerised all services using Docker and Docker Compose for consistent deployment environments.',
-      ],
-    },
-    {
-      title: 'TarotByKS',
+      title: 'Mystic Tarot',
       subtitle: 'Full-Stack Digital Consultation Platform',
       period: 'Ongoing',
       tags: ['ASP.NET Core', 'Angular', 'SQL Server', 'Docker', 'REST APIs'],
       category: 'fullstack',
-      github: 'https://github.com/kstwkiv',
+      github: 'https://github.com/kstwkiv/MysticTarot',
       color: '#9b59b6',
       icon: '🔮',
       points: [
@@ -139,12 +123,28 @@ export const portfolioData = {
       ],
     },
     {
+      title: 'CraveKart',
+      subtitle: 'Microservices Food Delivery Platform',
+      period: 'April 2026',
+      tags: ['ASP.NET Core', 'RabbitMQ', 'Docker', 'SQL Server', 'API Gateway', 'C#'],
+      category: 'backend',
+      github: 'https://github.com/kstwkiv/CraveKart',
+      color: '#e74c3c',
+      icon: '🍔',
+      points: [
+        'Engineered a distributed microservices backend using ASP.NET Core and RESTful APIs.',
+        'Implemented asynchronous inter-service communication via RabbitMQ for scalable, decoupled architecture.',
+        'Designed API Gateway routing and centralised request handling for authentication and service orchestration.',
+        'Containerised all services using Docker and Docker Compose for consistent deployment environments.',
+      ],
+    },
+    {
       title: 'Cloud Data Pipeline',
       subtitle: 'E-Commerce Analytics Platform',
       period: 'Sept 2025',
-      tags: ['BigQuery', 'Python', 'SQL', 'ETL', 'GCP'],
+      tags: ['BigQuery', 'Python', 'SQL', 'ETL'],
       category: 'data',
-      github: 'https://github.com/kstwkiv',
+      github: 'https://github.com/kstwkiv/Ecommerce-sales-analytics-with-BigQuery',
       color: '#27ae60',
       icon: '📊',
       points: [
@@ -160,7 +160,7 @@ export const portfolioData = {
       period: 'July 2025',
       tags: ['Python', 'ARIMA', 'XGBoost', 'Time-Series', 'Feature Engineering'],
       category: 'data',
-      github: 'https://github.com/kstwkiv',
+      github: 'https://github.com/kstwkiv/RBI_FORECAST_MODELS',
       color: '#f39c12',
       icon: '📈',
       points: [
@@ -176,7 +176,7 @@ export const portfolioData = {
       period: 'Mar 2025',
       tags: ['SQL', 'RFM Segmentation', 'Association Rules', 'Analytics'],
       category: 'data',
-      github: 'https://github.com/kstwkiv',
+      github: 'https://github.com/kstwkiv/Product-Recommendation-System',
       color: '#3498db',
       icon: '🛒',
       points: [
@@ -192,7 +192,7 @@ export const portfolioData = {
       period: 'Dec 2025',
       tags: ['JavaScript', 'TypeScript', 'HTML5', 'CSS3'],
       category: 'fullstack',
-      github: 'https://github.com/kstwkiv',
+      github: 'https://github.com/kstwkiv/LPU-Connect',
       color: '#1abc9c',
       icon: '🎓',
       points: [
@@ -227,6 +227,11 @@ export const portfolioData = {
       title: 'Amazon ML Summer School',
       detail: 'Top 3% Nationally — Aug–Sept 2025',
       icon: '🏆',
+    },
+    {
+      title: 'GATE CS 2026',
+      detail: 'Qualified GATE CS 2026',
+      icon: '🎓',
     },
     {
       title: '400+ LeetCode Problems',
