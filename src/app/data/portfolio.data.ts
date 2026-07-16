@@ -2,12 +2,13 @@ export const portfolioData = {
   name: 'Sathwika Kurma',
   taglines: [
     'Backend Engineer',
+    'Data Analyst',
     'Data Engineer',
     'Full-Stack Developer',
     '.NET & Cloud Enthusiast',
   ],
   summary:
-    'Computer Science undergrad at LPU (2026) with hands-on experience building scalable microservices, cloud data pipelines, and RESTful APIs. Currently training at Capgemini on .NET full-stack. Top 3% nationally at Amazon ML Summer School. I love turning complex data and systems problems into clean, working solutions.',
+    'Computer Science undergrad at LPU (2026) with hands-on experience building scalable microservices, cloud data pipelines, Data visualizations and RESTful APIs. Trained at Capgemini on .NET full-stack. Top 3% nationally at Amazon ML Summer School. I love turning complex data and systems problems into clean, working solutions.',
   email: 'sathwikakurma1@gmail.com',
   phone: '+91-9573171390',
   location: 'Hyderabad, Telangana, India',
@@ -58,7 +59,7 @@ export const portfolioData = {
     {
       category: 'ML & Analytics',
       icon: '🤖',
-      items: ['XGBoost', 'SVM', 'Random Forest', 'ARIMA', 'Time-Series', 'Feature Engineering', 'FAISS', 'NLP'],
+      items: ['Excel','Tableau','XGBoost', 'SVM', 'Random Forest', 'ARIMA', 'Time-Series', 'Feature Engineering', 'FAISS', 'NLP'],
     },
   ],
 
@@ -137,6 +138,28 @@ export const portfolioData = {
         'Designed API Gateway routing and centralised request handling for authentication and service orchestration.',
         'Containerised all services using Docker and Docker Compose for consistent deployment environments.',
       ],
+    },
+    {
+      title: 'Credit Card Fraud Detection',
+subtitle: 'End-to-End Machine Learning Fraud Analytics Pipeline',
+period: 'July 2026',
+tags: [
+  'Python',
+  'Scikit-learn',
+  'SQL',
+  'Pandas',
+  'Machine Learning'
+],
+category: 'analytics',
+github: 'https://github.com/kstwkiv/credit-card-fraud-detection',
+color: '#8eacbdff',
+icon: '💳',
+points: [
+  'Developed an end-to-end fraud detection pipeline using Python to process and analyze 284,807 real-world credit card transactions.',
+  'Addressed severe class imbalance (0.17% fraud) using SMOTE and trained Logistic Regression and Random Forest models for fraud classification.',
+  'Performed exploratory data analysis, feature preprocessing, model evaluation, and generated ROC, Precision-Recall, and Confusion Matrix visualizations.',
+  'Executed SQL-based business analytics to uncover fraud trends, high-risk transactions, and temporal fraud patterns, presenting insights through Tableau dashboards and Excel reports.',
+],
     },
     {
       title: 'Cloud Data Pipeline',
