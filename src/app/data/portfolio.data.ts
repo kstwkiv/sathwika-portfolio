@@ -108,6 +108,22 @@ export const portfolioData = {
 
   projects: [
     {
+      title: 'Distributed Task Scheduler',
+      subtitle: 'Fault-Tolerant Job Queue',
+      period: 'July 2026',
+      tags: ['Python', 'FastAPI', 'Redis', 'PostgreSQL', 'Docker Compose'],
+      category: 'backend',
+      github: 'https://github.com/kstwkiv/distributed-task-scheduler',
+      color: '#2ecc71',
+      icon: '⚙️',
+      points: [
+        'Built a distributed job queue with a FastAPI producer and horizontally scalable worker pool, using blocking BLPOP for zero-latency, atomic job dequeuing across concurrent workers.',
+        'Engineered at-least-once delivery via a TTL-based processing lock plus a reaper thread that auto-recovers jobs from crashed workers within ~90 seconds without manual intervention.',
+        'Implemented idempotent job submission with a database-enforced unique constraint, preventing duplicate execution under concurrent retries; added exponential-backoff retries with a dead-letter queue for exhausted failures.',
+        'Load-tested with 50 concurrent users using Locust, achieving 82 requests/sec while maintaining a 1.3 s p99 latency; covered core logic with pytest, fakeredis, and SQLite integration tests.',
+      ],
+    },
+    {
       title: 'Mystic Tarot',
       subtitle: 'Full-Stack Digital Consultation Platform',
       period: 'Ongoing',
