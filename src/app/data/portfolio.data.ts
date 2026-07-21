@@ -113,7 +113,7 @@ export const portfolioData = {
       period: 'July 2026',
       tags: ['Python', 'FastAPI', 'Redis', 'PostgreSQL', 'Docker Compose'],
       category: 'backend',
-      github: 'https://github.com/kstwkiv/distributed-task-scheduler',
+      github: 'https://github.com/kstwkiv/task-scheduler',
       color: '#2ecc71',
       icon: '⚙️',
       points: [
